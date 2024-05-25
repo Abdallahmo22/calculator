@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <table>
+
+            <tr>
+                <input type="text" name="" id="input">
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="clearResult()">C</button></td>
+                <td><button onclick="deleteChar()"><i class="fas fa-backspace"></i></button></td>
+                <td><button onclick="number('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="number('7')">7</button></td>
+                <td><button onclick="number('8')">8</button></td>
+                <td><button onclick="number('9')">9</button></td>
+                <td><button onclick="number('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="number('4')">4</button></td>
+                <td><button onclick="number('5')">5</button></td>
+                <td><button onclick="number('6')">6</button></td>
+                <td><button onclick="number('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="number('1')">1</button></td>
+                <td><button onclick="number('2')">2</button></td>
+                <td><button onclick="number('3')">3</button></td>
+                <td><button onclick="number('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="number('0')">0</button></td>
+                <td><button onclick="number('.')">.</button></td>
+                <td><button  onclick="result()">=</button></td>
+                <td><button onclick="number('%')">%</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
